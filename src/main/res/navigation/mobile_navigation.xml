@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="pl.rupniewski.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_orders"
+        android:name="pl.rupniewski.ui.orders.OrdersFragment"
+        android:label="@string/orders_history"
+        tools:layout="@layout/fragment_orders" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="pl.rupniewski.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="pl.rupniewski.ui.tools.ToolsFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_tools" />
+
+    <fragment
+        android:id="@+id/nav_update_email"
+        android:name="pl.rupniewski.ui.updateemail.UpdateEmailFragment"
+        android:label="@string/menu_update_email"
+        tools:layout="@layout/fragment_update_email" />
+
+    <fragment
+        android:id="@+id/nav_update_password"
+        android:name="pl.rupniewski.ui.updatepassword.UpdatePasswordFragment"
+        android:label="@string/menu_update_password"
+        tools:layout="@layout/fragment_update_password" />
+    <fragment
+        android:id="@+id/nav_personal_data"
+        android:name="pl.rupniewski.ui.personaldata.PersonalDataFragment"
+        android:label="@string/menu_personal"
+        tools:layout="@layout/fragment_personal_data" />
+    <fragment
+        android:id="@+id/nav_shop_selected"
+        android:name="pl.rupniewski.ui.home.ShopFragment"
+        android:label="SelectedShop"
+        tools:layout="@layout/fragment_shop" />
+</navigation>

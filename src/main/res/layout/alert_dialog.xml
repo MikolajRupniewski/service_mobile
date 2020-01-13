@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rating_bar_order"
+        android:max="6"
+        android:numStars="6"
+        android:layout_marginTop="20dp"
+        />
+    </LinearLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="20dp"
+        android:id="@+id/et_username_login_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/comment_order"
+            android:layout_width="match_parent"
+            android:layout_height="106dp"
+            android:layout_gravity="center_horizontal"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="@string/add_your_comment_about_order"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:minLines="2"
+            android:scrollbars="vertical"
+            android:scrollHorizontally="false" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>
+
+
+

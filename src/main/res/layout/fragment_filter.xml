@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="450dp"
+    android:layout_gravity="center"
+    android:background="@drawable/background_filter"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_category_label"
+        android:text="@string/select_category"
+        android:layout_marginStart="20dp"/>
+    <Spinner
+        android:id="@+id/spinner_category_filter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_distance_label"
+        android:text="@string/select_maximum_distance"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <SeekBar
+            android:id="@+id/sb_distance_filter"
+            style="@style/Widget.AppCompat.SeekBar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:max="500"
+            android:progress="5" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:id="@+id/tv_distance_filter"/>
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="30dp"
+        android:id="@+id/et_search_filter_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.171">
+        <EditText
+            android:id="@+id/et_search_filter"
+            style="@style/RobotoEditTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/search_by_name_or_service"
+            android:layout_gravity="center_horizontal"
+            android:inputType="textPersonName"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Switch
+                android:id="@+id/radio_service_place_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Service at shop"
+                android:switchPadding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp" />
+
+            <Switch
+                android:id="@+id/radio_service_place_customer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:switchPadding="10dp"
+                android:text="Service at customer" />
+
+            <Switch
+                android:id="@+id/radio_service_place_remotely"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:switchPadding="10dp"
+                android:text="Service remotely" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:weightSum="1.0">
+
+        <Button
+            android:id="@+id/btn_cancel_filter"
+            style="@style/RobotoButtonStyle"
+            android:layout_weight=".4"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:text="@string/cancel" />
+
+        <Button
+            android:id="@+id/btn_confirm_filter"
+            style="@style/RobotoButtonStyle"
+            android:layout_weight=".4"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:text="@string/confirm" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
